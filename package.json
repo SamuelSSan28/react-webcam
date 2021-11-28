@@ -5,8 +5,8 @@
   "main": "dist/react-webcam.js",
   "types": "dist/react-webcam.d.ts",
   "scripts": {
-    "prepare": "npm run build:production",
-    "build": "webpack-cli",
+    "prepare": "webpack-cli build",
+    "build": "webpack-cli build",
     "build:production": "npm run build && webpack-cli build",
     "lint": "eslint src/react-webcam.tsx",
     "test": "tsc && jest"
