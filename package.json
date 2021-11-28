@@ -5,7 +5,9 @@
   "main": "dist/react-webcam.js",
   "types": "dist/react-webcam.d.ts",
   "scripts": {
-    "build": "npm run build",
+    "prepare": "npm run build:production",
+    "build": "webpack-cli",
+    "build:production": "npm run build && webpack-cli build",
     "lint": "eslint src/react-webcam.tsx",
     "test": "tsc && jest"
   },
@@ -23,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/mozmorris/react-webcam/issues"
   },
-  "homepage": "https://github.com/mozmorris/react-webcam",
   "peerDependencies": {
     "react": ">=15.3.0",
     "react-dom": ">=15.3.0"

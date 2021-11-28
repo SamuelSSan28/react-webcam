@@ -1,5 +1,5 @@
 module.exports = {
-  mode: process.env.NODE_ENV,
+  mode: "production",
   devtool: 'source-map',
   externals: [
     {
